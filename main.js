@@ -51,10 +51,16 @@ function showInfo(data) {
         const description = document.createElement('p');
         description.textContent = row.description;
 
+         // Create description element
+         const price = document.createElement('p');
+         price.textContent = row.price;
+ 
+
         // Append elements to grid item
         gridItem.appendChild(image);
         gridItem.appendChild(title);
         gridItem.appendChild(description);
+        gridItem.appendChild(price);
 
         // Append grid item to grid container
         gridContainer.appendChild(gridItem);
